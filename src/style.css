@@ -1,4 +1,4 @@
-.column{
+.column {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,100 +6,99 @@
   gap: 20px;
 }
 
-.lightbg{
-  background-color: #A7D3FD;
+.lightbg {
+  background-color: #a7d3fd;
 }
 
-.regsign{
+.regsign {
   min-height: 80vh;
   margin: 10vh;
   border-radius: 50px;
   padding: 20px;
 }
 
-.innercontainer{
+.innercontainer {
   width: 100%;
   max-width: 800px;
 }
 
-.signinbutton{
+.signinbutton {
   font-size: 24px;
   color: white;
   width: fit-content;
   padding: 10px;
   border-radius: 15px;
   border: none;
-  background-color: #406AFF;
+  background-color: #406aff;
   transition: 0.3s;
 }
-.signinbutton:hover{
+.signinbutton:hover {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.forgotpass{
+.forgotpass {
   width: fit-content;
   border: none;
 }
 
-.inputcontainer{
+.inputcontainer {
   font-size: 16px;
   padding: 10px;
   border-radius: 10px;
   border: none;
 }
 
-.hoverblue:hover{
-  color: #406AFF;
+.hoverblue:hover {
+  color: #406aff;
   font-weight: 500;
 }
 
-.dashboard{
+.dashboard {
   display: flex;
   min-height: 100vh;
   min-width: 100vw;
   background-color: rgb(200, 218, 237);
 }
 
-.center{
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.button1{
-color: black;
-border: 2px solid black;
-padding-left: 30px;
-padding-right: 30px;
-padding-top: 10px;
-padding-bottom: 10px;
-font-size: 24px;
-border-radius: 50px;
-height: 24px;
-width: fit-content;
-transition: 0.3s;
+.button1 {
+  color: black;
+  border: 2px solid black;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 24px;
+  border-radius: 50px;
+  height: 24px;
+  width: fit-content;
+  transition: 0.3s;
 }
 
-.button1:hover{
+.button1:hover {
   background-color: rgb(194, 191, 191);
 }
 
-.micicon:active{
+.micicon:active {
   background-color: gray;
 }
 
-.record{
+.record {
   display: flex;
   height: 50px;
-  
 }
 
-.buttons{
+.buttons {
   display: flex;
   gap: 20px;
 }
-.container1{
+.container1 {
   border-radius: 15px;
   padding: 15px;
   height: 200px;
@@ -108,31 +107,108 @@ transition: 0.3s;
   border: 2px solid black;
 }
 
-.icon1{
+.icon1 {
   height: 40px;
   width: 40px;
 }
 
-.tilemain{
+.tilemain {
+  display: flex;
+  flex-direction: column;
   transition: 0.3s ease;
   padding: 10px;
   width: 80vw;
-  background-color: rgb(244, 177, 177);
+  border-radius: 5px;
+  border: 2px solid black;
 }
 
-.tile1{
+.tile1 {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.tiletop{
+.tile1child {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+.tileid {
+  font-size: 32px;
+  font-weight: 600;
+}
+.tilename {
+  transition: 0.3s;
+  border-radius: 15px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.tilename:hover {
+  background-color: #d0d0d0;
+}
+.tilename::before {
+  content: "Name";
+  font-size: 12px;
+}
+.tiledoctor {
+  transition: 0.3s;
+  border-radius: 15px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.tiledoctor:hover {
+  background-color: #d0d0d0;
+}
+.tiledoctor::before {
+  content: "Doctor";
+  font-size: 12px;
 }
 
-.viewmore{
-  background-color: rgb(149, 154, 93);
+.tileamount {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.tiletop {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.icon-30 {
+  transition: 0.3s;
+  align-self: flex-end;
   height: 30px;
-  width: 100px;
+  width: 30px;
+  background-color: white;
+  border-radius: 15px;
+}
+.rotate180 {
+  rotate: 180deg;
+}
+
+.pending {
+  background-color: rgb(255, 146, 146);
+  font-weight: 500;
+  border-radius: 30px;
+  height: 30px;
+  width: fit-content;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.delivered {
+  background-color: rgb(149, 255, 149);
+  font-weight: 500;
+  border-radius: 30px;
+  height: 30px;
+  width: fit-content;
+  padding-left: 15px;
+  padding-right: 15px;
 }
