@@ -41,7 +41,7 @@ const Tile = () => {
   ));
 
   return (
-    <div className="tilemain">
+    <div className="tilemain bg-white rounded-xl my-4 mx-auto shadow-lg">
       <div className="tiletop">
         <div className="">
           <div className="tileid">ID:{"25"}</div>
