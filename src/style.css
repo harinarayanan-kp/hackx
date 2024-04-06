@@ -113,6 +113,7 @@
 }
 
 .tilemain {
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   transition: 0.3s ease;
