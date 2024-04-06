@@ -1,0 +1,138 @@
+.column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.lightbg{
+  background-color: #A7D3FD;
+}
+
+.regsign{
+  min-height: 80vh;
+  margin: 10vh;
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.innercontainer{
+  width: 100%;
+  max-width: 800px;
+}
+
+.signinbutton{
+  font-size: 24px;
+  color: white;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  background-color: #406AFF;
+  transition: 0.3s;
+}
+.signinbutton:hover{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.forgotpass{
+  width: fit-content;
+  border: none;
+}
+
+.inputcontainer{
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.hoverblue:hover{
+  color: #406AFF;
+  font-weight: 500;
+}
+
+.dashboard{
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: rgb(200, 218, 237);
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button1{
+color: black;
+border: 2px solid black;
+padding-left: 30px;
+padding-right: 30px;
+padding-top: 10px;
+padding-bottom: 10px;
+font-size: 24px;
+border-radius: 50px;
+height: 24px;
+width: fit-content;
+transition: 0.3s;
+}
+
+.button1:hover{
+  background-color: rgb(194, 191, 191);
+}
+
+.micicon:active{
+  background-color: gray;
+}
+
+.record{
+  display: flex;
+  height: 50px;
+  
+}
+
+.buttons{
+  display: flex;
+  gap: 20px;
+}
+.container1{
+  border-radius: 15px;
+  padding: 15px;
+  height: 200px;
+  width: 80vw;
+  max-width: 800px;
+  border: 2px solid black;
+}
+
+.icon1{
+  height: 40px;
+  width: 40px;
+}
+
+.tilemain{
+  transition: 0.3s ease;
+  padding: 10px;
+  width: 80vw;
+  background-color: rgb(244, 177, 177);
+}
+
+.tile1{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tiletop{
+  display: flex;
+  justify-content: space-between;
+}
+
+.viewmore{
+  background-color: rgb(149, 154, 93);
+  height: 30px;
+  width: 100px;
+}
