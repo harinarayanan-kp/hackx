@@ -33,7 +33,7 @@ const Tile = () => {
   ];
 
   const itemList = list1.map((item) => (
-    <div key={item.id} className="tile1">
+    <div key={item.id} className="tile1 ">
       <div className="tile1child">{item.prescription}</div>
       <div className="tile1child">{item.dosage}</div>
       <div className="tile1child">{item.duration}</div>
@@ -41,9 +41,9 @@ const Tile = () => {
   ));
 
   return (
-    <div className="tilemain bg-white rounded-xl my-4 mx-auto shadow-lg">
+    <div className="tilemain bg-white rounded-xl my-4 mx-3 shadow-lg">
       <div className="tiletop">
-        <div className="">
+        <div className="pl-3">
           <div className="tileid">ID:{"25"}</div>
           {delivered ? (
             <div className="delivered">delivered</div>
