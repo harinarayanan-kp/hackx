@@ -1,44 +1,43 @@
-import React from 'react'
-import Tile from './Tile'
-import Navbar from './Navbar'
-import { BsChevronCompactRight } from "react-icons/bs";
-import Cards from './Cards';
+import React, { useState } from "react";
+import Navbar from "./Navbar2";
+import OrderTile from "./OrderTile";
+import { CiSearch } from "react-icons/ci";
+import Dropdown from "./Dropdown";
 
 const Inventory = () => {
+  const [query, setQuery] = useState("");
   return (
-    <div className='text-black'>
-      <Navbar/>
-        <div className=' max-w-[1300px] flex flex-col bg-gradient-to-r from-green-100 to-slate-50 items-center h-full mx-auto'>
-         
-        <div className='mt-[36px] max-w-[1100px] w-full h-full rounded-3xl  rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 '>
-          <Cards/>
-        <div className="flex items-center "><h1 className='text-lg font- text-gray-600 text-start mt-11 mb-3'>My Orders</h1><BsChevronCompactRight className='mt-12 ml-4 mb-3' />
+    <div className="orderhome">
+      <Navbar />
+      <div className="topbar">
+        <b>Inventory</b>
+        <div className="searchbox">
+          <CiSearch size={30}/>
+          <input
+            style={{
+                paddingLeft: "15px",
+              height: "30px",
+              borderRadius: "15px",
+              border: "1px solid grey",
+              fontSize: "14px",
+              width: "100%",
+            }}
+            type="text"
+            placeholder="Search by product name"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+          />
         </div>
-      <Tile/>
-        <Tile/>
-        <Tile/>
-        <Tile/>
-        <Tile/>
-        <Tile/>
-        <Tile/>
-        <Tile/>
-        <Tile/>
-        <Tile/>
-        <Tile/>
-        <Tile/>
-        <Tile/>
-
-
-
-
-
-        
-        </div>
-        
-        </div>
-        
+        {/* <div className="dropdown">dropdown</div> */}
+        {/* <Dropdown/> */}
+      </div>
+      <OrderTile />
+      <OrderTile />
+      <OrderTile />
+      <OrderTile />
+      <OrderTile />
     </div>
-  )
-}
+  );
+};
 
-export default Inventory
+export default Inventory;
