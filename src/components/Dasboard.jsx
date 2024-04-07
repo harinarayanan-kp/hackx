@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../style.css";
 import Tile from "./Tile";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar2";
 // import Explore from "./explore.svg";
 // import Mic from "./mic.svg";
 // import Search from "./search.svg";
