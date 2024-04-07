@@ -215,7 +215,7 @@
 
 .navbar {
   width: 100%;
-  background-color: aqua;
+  background-color: rgb(176, 234, 142);
   height: 10vh;
   min-height: 80px;
   display: flex;
@@ -251,7 +251,7 @@
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background-color: #406aff;
+  background-color: #2c392d;
 }
 
 .account:hover{

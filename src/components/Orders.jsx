@@ -10,7 +10,7 @@ const Orders = () => {
       <div className="topbar">
         <b>Inventory</b>
         <input placeholder="search" className="searchbox"/>
-        {/* <div className="dropdown">dropdown</div> */}
+        <div className="dropdown">dropdown</div>
         {/* <Dropdown/> */}
       </div>
       <OrderTile/>
