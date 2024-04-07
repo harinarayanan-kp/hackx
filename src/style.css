@@ -56,6 +56,7 @@
 
 .dashboard {
   display: flex;
+  flex-direction: column;
   min-height: 100vh;
   min-width: 100vw;
   background-color: rgb(200, 218, 237);
@@ -119,7 +120,6 @@
   transition: 0.3s ease;
   padding: 10px;
   width: 100%;
-  
 }
 
 .tile1 {
@@ -211,4 +211,75 @@
   width: fit-content;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: aqua;
+  height: 10vh;
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.navend {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.order {
+  font-size: 20px;
+  transition: 0.3s;
+  border-radius: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.order:hover {
+  cursor: pointer;
+  background-color: #a7d3fd;
+}
+
+.account {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #406aff;
+}
+
+.account:hover{
+  cursor: pointer;
+}
+.orderhome{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.topbar{
+  height: 80px;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.ordertile{
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.prdertilewrap{
+  margin: 10px;
+  width: 100%;
 }
