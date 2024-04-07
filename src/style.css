@@ -275,6 +275,8 @@
 }
 
 .ordertile {
+  background-color: white;
+  border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   padding: 10px;
   display: flex;
@@ -287,7 +289,34 @@
 }
 .searchbox {
   width: 100%;
-  maxwidth: 500px;
+  max-width: 500px;
   display: flex;
   align-items: center;
+}
+
+.active {
+  justify-content: center;
+  font-weight: bold;
+}
+.hoverline {
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Added position relative */
+}
+
+.hoverline:after {
+  transition: 0.3s ease-out; /* Changed transition property */
+  content: "";
+  position: absolute;
+  bottom: 0; /* Added bottom position */
+  left: 50%; /* Start from center */
+  transform: translateX(-50%); /* Center horizontally */
+  height: 3px;
+  border-radius: 5px;
+  width: 0%;
+  background-color: rgb(44, 81, 1);
+}
+
+.hoverline:hover:after {
+  width: 100%; /* Expand to full width on hover */
 }
