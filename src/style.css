@@ -254,32 +254,40 @@
   background-color: #2c392d;
 }
 
-.account:hover{
+.account:hover {
   cursor: pointer;
 }
-.orderhome{
+.orderhome {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.topbar{
+.topbar {
   height: 80px;
   width: 100%;
   max-width: 900px;
   display: flex;
+  gap: 30px;
   align-items: center;
   justify-content: space-between;
   padding-left: 30px;
   padding-right: 30px;
 }
 
-.ordertile{
+.ordertile {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   padding: 10px;
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
-.prdertilewrap{
+.prdertilewrap {
   margin: 10px;
   width: 100%;
+}
+.searchbox {
+  width: 100%;
+  maxwidth: 500px;
+  display: flex;
+  align-items: center;
 }
